@@ -1,11 +1,31 @@
-<div align="center">
+# Eliana Quintas — Website Oficial
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Website estático construído em React, TypeScript, Vite e Tailwind CSS, pronto para alojamento no **GitHub** e deploy como **Static Site no Render**.
 
-  <h1>Built with AI Studio</h2>
+## Estrutura estática
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- `src/` — Código-fonte da aplicação e imagens dos serviços (`src/assets/images/`).
+- `public/` — Recursos públicos estáticos copiados diretamente para `dist/`.
+- `render.yaml` — Configuração automática para Static Site no Render (`staticPublishPath: ./dist`).
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Execução local
 
-</div>
+```bash
+npm install
+npm run dev
+```
+
+## Build estático
+
+```bash
+npm run build
+```
+
+O resultado final totalmente estático é gerado na pasta `dist/`.
+
+## Deploy no Render (via GitHub)
+
+1. Suba este repositório para o GitHub (`git push`).
+2. No Render, crie um novo **Static Site** (ou **Blueprint** usando `render.yaml`) ligado ao repositório:
+   - **Build Command:** `npm install && npm run build`
+   - **Publish Directory:** `dist`

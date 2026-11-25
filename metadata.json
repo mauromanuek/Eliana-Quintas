@@ -1,0 +1,6 @@
+{
+  "name": "Eliana Quintas — Gestão, Consultoria e Formação Empresarial",
+  "description": "Website oficial de Eliana Quintas: gestão empresarial, orientação financeira, consultoria, formação profissional e palestras.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
